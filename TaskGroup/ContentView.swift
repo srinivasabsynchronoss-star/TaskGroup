@@ -15,6 +15,11 @@ struct ContentView: View {
         GeometryReader { geometry in
             let isLandscape = geometry.size.width > geometry.size.height
             VStack(alignment: .center) {
+                Text("Task Group Gallery")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.top, 24)
+                    .padding(.bottom, 8)
                 if isLoading {
                     VStack {
                         Spacer()
